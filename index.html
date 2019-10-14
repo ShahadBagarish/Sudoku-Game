@@ -6,29 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sudoku Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 
 <body>
-    <div class="container" id ="test">
+    <header class="header">
+        <h1 id="logo1">SUDOKU</h1>
+    </header>
+    <div class="container">
         <table id="big_grid_container">
             <tr>
                 <td>
                     <table class="box1_container">
                         <tr>
-                            <td id="11">5</td>
-                            <td id="12">3</td>
+                            <td id="11" class="color">5</td>
+                            <td id="12" class="color">3</td>
                             <td id="13"></td>
                         </tr>
                         <tr>
-                            <td id="14">6</td>
+                            <td id="14" class="color">6</td>
                             <td id="15"></td>
                             <td id="16"></td>
                         </tr>
                         <tr>
                             <td id="17"></td>
-                            <td id="18">9</td>
-                            <td id="19">8</td>
+                            <td id="18" class="color">9</td>
+                            <td id="19" class="color">8</td>
                         </tr>
                     </table>
                 </td>
@@ -36,13 +43,13 @@
                     <table class="box2_container">
                         <tr>
                             <td id="21"></td>
-                            <td id="22">7</td>
+                            <td id="22" class="color">7</td>
                             <td id="23"></td>
                         </tr>
                         <tr>
-                            <td id="24">1</td>
-                            <td id="25">9</td>
-                            <td id="26">5</td>
+                            <td id="24" class="color">1</td>
+                            <td id="25" class="color">9</td>
+                            <td id="26" class="color">5</td>
                         </tr>
                         <tr>
                             <td id="27"></td>
@@ -65,7 +72,7 @@
                         </tr>
                         <tr>
                             <td id="37"></td>
-                            <td id="38">6</td>
+                            <td id="38" class="color">6</td>
                             <td id="39"></td>
                         </tr>
                     </table>
@@ -75,17 +82,17 @@
                 <td>
                     <table class="box4_container">
                         <tr>
-                            <td id="41">8</td>
+                            <td id="41" class="color">8</td>
                             <td id="42"></td>
                             <td id="43"></td>
                         </tr>
                         <tr>
-                            <td id="44">4</td>
+                            <td id="44" class="color">4</td>
                             <td id="45"></td>
                             <td id="46"></td>
                         </tr>
                         <tr>
-                            <td id="47">7</td>
+                            <td id="47" class="color">7</td>
                             <td id="48"></td>
                             <td id="49"></td>
                         </tr>
@@ -95,17 +102,17 @@
                     <table class="box5_container">
                         <tr>
                             <td id="51"></td>
-                            <td id="52">6</td>
+                            <td id="52" class="color">6</td>
                             <td id="53"></td>
                         </tr>
                         <tr>
-                            <td id="54">8</td>
+                            <td id="54" class="color">8</td>
                             <td id="55"></td>
-                            <td id="56">3</td>
+                            <td id="56" class="color">3</td>
                         </tr>
                         <tr>
                             <td id="57"></td>
-                            <td id="58">2</td>
+                            <td id="58" class="color">2</td>
                             <td id="59"></td>
                         </tr>
                     </table>
@@ -115,17 +122,17 @@
                         <tr>
                             <td id="61"></td>
                             <td id="62"></td>
-                            <td id="63">3</td>
+                            <td id="63" class="color">3</td>
                         </tr>
                         <tr>
                             <td id="64"></td>
                             <td id="65"></td>
-                            <td id="66">1</td>
+                            <td id="66" class="color">1</td>
                         </tr>
                         <tr>
                             <td id="67"></td>
                             <td id="68"></td>
-                            <td id="69">6</td>
+                            <td id="69" class="color">6</td>
                         </tr>
                     </table>
                 </td>
@@ -135,7 +142,7 @@
                     <table class="box7_container">
                         <tr>
                             <td id="71"></td>
-                            <td id="72">6</td>
+                            <td id="72" class="color">6</td>
                             <td id="73"></td>
                         </tr>
                         <tr>
@@ -158,13 +165,13 @@
                             <td id="83"></td>
                         </tr>
                         <tr>
-                            <td id="84">4</td>
-                            <td id="85">1</td>
-                            <td id="86">9</td>
+                            <td id="84" class="color">4</td>
+                            <td id="85" class="color">1</td>
+                            <td id="86" class="color">9</td>
                         </tr>
                         <tr>
                             <td id="87"></td>
-                            <td id="88">8</td>
+                            <td id="88" class="color">8</td>
                             <td id="89"></td>
                         </tr>
                     </table>
@@ -172,43 +179,42 @@
                 <td>
                     <table class="box9_container">
                         <tr>
-                            <td id="91">2</td>
-                            <td id="92">8</td>
+                            <td id="91" class="color">2</td>
+                            <td id="92" class="color">8</td>
                             <td id="93"></td>
                         </tr>
                         <tr>
                             <td id="94"></td>
                             <td id="95"></td>
-                            <td id="96">5</td>
+                            <td id="96" class="color">5</td>
                         </tr>
                         <tr>
                             <td id="97"></td>
                             <td id="98"></td>
-                            <td id="99">9</td>
+                            <td id="99" class="color">9</td>
                         </tr>
                     </table>
                 </td>
             </tr>
         </table>
     </div>
-    <table class="container2">
-        <tr>
-            <td><button id="1">1</button></td>
-            <td><button id="2">2</button></td>
-            <td><button id="3">3</button></td>
-            <td><button id="4">4</button></td>
-            <td><button id="5">5</button></td>
-            <td><button id="6">6</button></td>
-            <td><button id="7">7</button></td>
-            <td><button id="8">8</button></td>
-            <td><button id="9">9</button></td>
-        </tr>
-    </table>
+    <div class="container2">
+            <button id="1" class="button_design">1</button>
+            <button id="2" class="button_design">2</button>
+            <button id="3" class="button_design">3</button>
+            <button id="4" class="button_design">4</button>
+            <button id="5" class="button_design">5</button>
+            <button id="6" class="button_design">6</button>
+            <button id="7" class="button_design">7</button>
+            <button id="8" class="button_design">8</button>
+            <button id="9" class="button_design">9</button>
+    </div>
+    
 </body>
 <script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
 <script src="/assets/main.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 </html>
