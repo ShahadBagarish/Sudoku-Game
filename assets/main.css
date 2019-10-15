@@ -1,8 +1,16 @@
+
+#nav{
+    padding: 20px;
+    background-color: #666;
+    font-family: 'Permanent Marker', cursive;
+}
+
 /* Design the Home Page*/
 .HomePage_container{
     width: 900px;
     width: 30%;
-    margin-left: 20%;
+    /* margin-left: 20%; */
+    margin: 0 auto;
 }
 #HomePage_logo{
     margin-top: 70px;
@@ -48,10 +56,19 @@
 }
 #about:hover {background-color: wheat;}
 
-
 /* .....................................................................
 Design the game Page*/
 
+.page_container{
+    display: flex;
+    /* align-content:  */
+}
+.column1 {
+    flex: 1;
+  min-width: 0;
+  display: flex ;
+  flex-direction: column;
+}
 body {
     background-color: rgb(240, 245, 245);
 }
@@ -59,7 +76,8 @@ body {
     display: none;
     width: 900px;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-right: 30px;
 
 }
 .header {
@@ -70,16 +88,13 @@ body {
     color: wheat;
     text-align: center;
     text-shadow: -2px 0 rgb(3, 26, 46), 0 2px rgb(3, 26, 46), 2px 0 rgb(3, 26, 46), 0 -2px rgb(3, 26, 46);
-        /* background-color: rgba(40, 150, 220, 0.1);
-        text-align: center;
-        padding: 15px;
-        margin-bottom: 15px; */
 }
 #game_logo{
     font-family: 'Permanent Marker', cursive;
     width: 100%;
     font-size: 80px;
     margin: 0 auto;
+    display: none;
 }
 table {
     border-collapse: collapse;
@@ -106,9 +121,6 @@ table, tr, td {
     font-family: 'Orbitron', sans-serif;
     
 }
-/* .color {
-    background-color: rgb(158, 196, 210)
-} */
 .number_container{
     margin: 0 auto;
     margin-top: 50px;
@@ -126,3 +138,31 @@ table, tr, td {
 }
 .button_design:hover {opacity: 2}
 
+.text {
+    font-family: 'Permanent Marker', cursive;
+    margin-right: 90px;
+}
+
+.img_button{
+    margin-left: 170px;
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+#home , #save{
+    
+    border-radius: 20px;
+    margin-top: 10px;
+    
+    width: 60px;
+}
+#img_home{
+   width: 100%
+}
+#save_home{
+   width: 100%
+}
+.timer {
+    font-family: 'Permanent Marker', cursive;
+    margin-left: 40%;
+    margin-top: 10px;
+}

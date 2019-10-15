@@ -8,16 +8,34 @@ let correctPlacesForThree = ["27", "34", "49", "77", "82", "95"]
 let correctPlacesForFour = ["13", "28", "35", "59", "61", "78", "93"]
 let correctPlacesForFive = ["37", "42", "55", "68", "79", "81"]
 let correctPlacesForSix = ["21", "46", "89", "94"]
-let correctPlacesForSeven = ["15", "39", "51", "64", "76", "83"]
+let correctPlacesForSeven = ["15", "39", "51", "64", "76", "83","98"]
 let correctPlacesForEight = ["23", "36", "67", "75",]
 let correctPlacesForNine = ["31", "43", "57", "65", "71"]
 let place = ''
+let boardSeved
+$(".column1").hide();
 
-$("#play").click(function(){
+$("#home").click(function () {
+    $(".HomePage_container").show();
+    $(".number_container").hide();
+    $(".game_container").hide();
+    $("#game_logo").hide();
+    $(".column1").hide();
+});
+
+$("#save").click(function () {
+    
+});
+
+$("#play").click(function () {
     $(".HomePage_container").hide();
     $(".number_container").show();
     $(".game_container").show();
-  });
+    $("#game_logo").show();
+    $(".column1").show();
+});
+
+
 
 $(".number_container").click(function (e) {
     number_holder = e.target.id
@@ -129,3 +147,17 @@ function returnCheck() {
 function relocate() {
     location.replace("")
 }
+var second = 100;
+var timer = document.getElementById("time1r");
+var interval;
+function startTimer(){
+   interval = setInterval(function(){
+       timer.innerHTML = "Timer :"+second+"secs";
+       second--;
+if (second===-1){
+    clearInterval(interval)
+    gameover()
+}    
+   },1000);
+}
+startTimer()

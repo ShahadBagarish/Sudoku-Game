@@ -15,7 +15,12 @@
 </head>
 
 <body>
-        <hr>
+    <nav class="navbar navbar-dark bg-dark" id="nav">
+        <a class="navbar-brand" href="#">
+            <img src="/assets/img/Sudoko-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Sudoko
+        </a>
+    </nav>
     <div class="HomePage_container">
         <h1 id="HomePage_logo">SUDOKU</h1>
         <div>
@@ -23,205 +28,220 @@
             <a class="HomePage_button" id="help" role="button">Resume</a>
             <a class="HomePage_button" id="about" role="button">Tips</a>
         </div>
-
     </div>
-    
-    <div class="game_container">
-        <header class="header">
-            <h1 id="game_logo">SUDOKU</h1>
-        </header>
-        <table id="big_grid_container">
-            <tr>
-                <td>
-                    <table class="box1_container">
-                        <tr>
-                            <td id="11" class="color">5</td>
-                            <td id="12" class="color">3</td>
-                            <td id="13"></td>
-                        </tr>
-                        <tr>
-                            <td id="14" class="color">6</td>
-                            <td id="15"></td>
-                            <td id="16"></td>
-                        </tr>
-                        <tr>
-                            <td id="17"></td>
-                            <td id="18" class="color">9</td>
-                            <td id="19" class="color">8</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table class="box2_container">
-                        <tr>
-                            <td id="21"></td>
-                            <td id="22" class="color">7</td>
-                            <td id="23"></td>
-                        </tr>
-                        <tr>
-                            <td id="24" class="color">1</td>
-                            <td id="25" class="color">9</td>
-                            <td id="26" class="color">5</td>
-                        </tr>
-                        <tr>
-                            <td id="27"></td>
-                            <td id="28"></td>
-                            <td id="29"></td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table class="box3_container">
-                        <tr>
-                            <td id="31"></td>
-                            <td id="32"></td>
-                            <td id="33"></td>
-                        </tr>
-                        <tr>
-                            <td id="34"></td>
-                            <td id="35"></td>
-                            <td id="36"></td>
-                        </tr>
-                        <tr>
-                            <td id="37"></td>
-                            <td id="38" class="color">6</td>
-                            <td id="39"></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table class="box4_container">
-                        <tr>
-                            <td id="41" class="color">8</td>
-                            <td id="42"></td>
-                            <td id="43"></td>
-                        </tr>
-                        <tr>
-                            <td id="44" class="color">4</td>
-                            <td id="45"></td>
-                            <td id="46"></td>
-                        </tr>
-                        <tr>
-                            <td id="47" class="color">7</td>
-                            <td id="48"></td>
-                            <td id="49"></td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table class="box5_container">
-                        <tr>
-                            <td id="51"></td>
-                            <td id="52" class="color">6</td>
-                            <td id="53"></td>
-                        </tr>
-                        <tr>
-                            <td id="54" class="color">8</td>
-                            <td id="55"></td>
-                            <td id="56" class="color">3</td>
-                        </tr>
-                        <tr>
-                            <td id="57"></td>
-                            <td id="58" class="color">2</td>
-                            <td id="59"></td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table class="box6_container">
-                        <tr>
-                            <td id="61"></td>
-                            <td id="62"></td>
-                            <td id="63" class="color">3</td>
-                        </tr>
-                        <tr>
-                            <td id="64"></td>
-                            <td id="65"></td>
-                            <td id="66" class="color">1</td>
-                        </tr>
-                        <tr>
-                            <td id="67"></td>
-                            <td id="68"></td>
-                            <td id="69" class="color">6</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table class="box7_container">
-                        <tr>
-                            <td id="71"></td>
-                            <td id="72" class="color">6</td>
-                            <td id="73"></td>
-                        </tr>
-                        <tr>
-                            <td id="74"></td>
-                            <td id="75"></td>
-                            <td id="76"></td>
-                        </tr>
-                        <tr>
-                            <td id="77"></td>
-                            <td id="78"></td>
-                            <td id="79"></td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table class="box8_container">
-                        <tr>
-                            <td id="81"></td>
-                            <td id="82"></td>
-                            <td id="83"></td>
-                        </tr>
-                        <tr>
-                            <td id="84" class="color">4</td>
-                            <td id="85" class="color">1</td>
-                            <td id="86" class="color">9</td>
-                        </tr>
-                        <tr>
-                            <td id="87"></td>
-                            <td id="88" class="color">8</td>
-                            <td id="89"></td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table class="box9_container">
-                        <tr>
-                            <td id="91" class="color">2</td>
-                            <td id="92" class="color">8</td>
-                            <td id="93"></td>
-                        </tr>
-                        <tr>
-                            <td id="94"></td>
-                            <td id="95"></td>
-                            <td id="96" class="color">5</td>
-                        </tr>
-                        <tr>
-                            <td id="97"></td>
-                            <td id="98"></td>
-                            <td id="99" class="color">9</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </div>Î
-    <div class="number_container">
-        <button id="1" class="button_design">1</button>
-        <button id="2" class="button_design">2</button>
-        <button id="3" class="button_design">3</button>
-        <button id="4" class="button_design">4</button>
-        <button id="5" class="button_design">5</button>
-        <button id="6" class="button_design">6</button>
-        <button id="7" class="button_design">7</button>
-        <button id="8" class="button_design">8</button>
-        <button id="9" class="button_design">9</button>
-    </div>
+    <div class="page_container">
+        <div class="column1">
+            <header class="header">
+                <h1 id="game_logo">SUDOKU</h1>
+            </header>
+            <div class="number_container">
+                <table>
+                    <tr>
+                        <td><button id="1" class="button_design">1</button></td>
+                        <td><button id="2" class="button_design">2</button></td>
+                        <td><button id="3" class="button_design">3</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="4" class="button_design">4</button></td>
+                        <td><button id="5" class="button_design">5</button></td>
+                        <td><button id="6" class="button_design">6</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="7" class="button_design">7</button></td>
+                        <td><button id="8" class="button_design">8</button></td>
+                        <td><button id="9" class="button_design">9</button></td>
+                    </tr>
+                </table>
 
+            </div>
+            <div class="img_button">
+                <button id="home"><img id="img_home" src="/assets/img/icons8-home-page-64.png" alt="home"></button>
+                <button id="save"><img id="save_home" src="/assets/img/icons8-save-64.png" alt="save"></button>
+            </div>
+            <div class="timer" id="time1r" ></div>
+        </div>
+        <div class="game_container">
+            <table id="big_grid_container">
+                <tr>
+                    <td>
+                        <table class="box1_container">
+                            <tr>
+                                <td id="11" class="color">5</td>
+                                <td id="12" class="color">3</td>
+                                <td id="13"></td>
+                            </tr>
+                            <tr>
+                                <td id="14" class="color">6</td>
+                                <td id="15"></td>
+                                <td id="16"></td>
+                            </tr>
+                            <tr>
+                                <td id="17"></td>
+                                <td id="18" class="color">9</td>
+                                <td id="19" class="color">8</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="box2_container">
+                            <tr>
+                                <td id="21"></td>
+                                <td id="22" class="color">7</td>
+                                <td id="23"></td>
+                            </tr>
+                            <tr>
+                                <td id="24" class="color">1</td>
+                                <td id="25" class="color">9</td>
+                                <td id="26" class="color">5</td>
+                            </tr>
+                            <tr>
+                                <td id="27"></td>
+                                <td id="28"></td>
+                                <td id="29"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="box3_container">
+                            <tr>
+                                <td id="31"></td>
+                                <td id="32"></td>
+                                <td id="33"></td>
+                            </tr>
+                            <tr>
+                                <td id="34"></td>
+                                <td id="35"></td>
+                                <td id="36"></td>
+                            </tr>
+                            <tr>
+                                <td id="37"></td>
+                                <td id="38" class="color">6</td>
+                                <td id="39"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="box4_container">
+                            <tr>
+                                <td id="41" class="color">8</td>
+                                <td id="42"></td>
+                                <td id="43"></td>
+                            </tr>
+                            <tr>
+                                <td id="44" class="color">4</td>
+                                <td id="45"></td>
+                                <td id="46"></td>
+                            </tr>
+                            <tr>
+                                <td id="47" class="color">7</td>
+                                <td id="48"></td>
+                                <td id="49"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="box5_container">
+                            <tr>
+                                <td id="51"></td>
+                                <td id="52" class="color">6</td>
+                                <td id="53"></td>
+                            </tr>
+                            <tr>
+                                <td id="54" class="color">8</td>
+                                <td id="55"></td>
+                                <td id="56" class="color">3</td>
+                            </tr>
+                            <tr>
+                                <td id="57"></td>
+                                <td id="58" class="color">2</td>
+                                <td id="59"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="box6_container">
+                            <tr>
+                                <td id="61"></td>
+                                <td id="62"></td>
+                                <td id="63" class="color">3</td>
+                            </tr>
+                            <tr>
+                                <td id="64"></td>
+                                <td id="65"></td>
+                                <td id="66" class="color">1</td>
+                            </tr>
+                            <tr>
+                                <td id="67"></td>
+                                <td id="68"></td>
+                                <td id="69" class="color">6</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="box7_container">
+                            <tr>
+                                <td id="71"></td>
+                                <td id="72" class="color">6</td>
+                                <td id="73"></td>
+                            </tr>
+                            <tr>
+                                <td id="74"></td>
+                                <td id="75"></td>
+                                <td id="76"></td>
+                            </tr>
+                            <tr>
+                                <td id="77"></td>
+                                <td id="78"></td>
+                                <td id="79"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="box8_container">
+                            <tr>
+                                <td id="81"></td>
+                                <td id="82"></td>
+                                <td id="83"></td>
+                            </tr>
+                            <tr>
+                                <td id="84" class="color">4</td>
+                                <td id="85" class="color">1</td>
+                                <td id="86" class="color">9</td>
+                            </tr>
+                            <tr>
+                                <td id="87"></td>
+                                <td id="88" class="color">8</td>
+                                <td id="89"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="box9_container">
+                            <tr>
+                                <td id="91" class="color">2</td>
+                                <td id="92" class="color">8</td>
+                                <td id="93"></td>
+                            </tr>
+                            <tr>
+                                <td id="94"></td>
+                                <td id="95"></td>
+                                <td id="96" class="color">5</td>
+                            </tr>
+                            <tr>
+                                <td id="97"></td>
+                                <td id="98"></td>
+                                <td id="99" class="color">9</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
