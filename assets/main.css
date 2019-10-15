@@ -1,75 +1,95 @@
+/* Design the Home Page*/
+.HomePage_container{
+    width: 900px;
+    width: 30%;
+    margin-left: 20%;
+}
+#HomePage_logo{
+    margin-top: 70px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 80px;
+    color: wheat;
+    text-shadow: -2px 0 rgb(3, 26, 46), 0 2px rgb(3, 26, 46), 2px 0 rgb(3, 26, 46), 0 -2px rgb(3, 26, 46);
+}
+.HomePage_button {
+    margin: 0 auto;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    width: 450px;
+    display: inline-block;
+    padding: 15px 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px rgb(0, 0, 0);
+    margin-top: 40px;
+    margin-left: -60px;
+}
+.HomePage_button:active {
+  background-color: gray;
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+}
+#play , .HomePage_button{
+    background-color: rgb(211, 100, 118);
+}
+#play:hover {background-color: wheat;}
+
+#help, .HomePage_button{
+    background-color: rgb(40, 150, 220);
+}
+#help:hover {background-color: wheat;}
+
+#about, .HomePage_button{
+    background-color: rgb(230, 185, 67);
+}
+#about:hover {background-color: wheat;}
+
+
+/* .....................................................................
+Design the game Page*/
+
+body {
+    background-color: rgb(240, 245, 245);
+}
+.game_container{
+    display: none;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+.header {
+    margin: 0 auto;
+    margin-top: 15px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 80px;
+    color: wheat;
+    text-align: center;
+    text-shadow: -2px 0 rgb(3, 26, 46), 0 2px rgb(3, 26, 46), 2px 0 rgb(3, 26, 46), 0 -2px rgb(3, 26, 46);
+        /* background-color: rgba(40, 150, 220, 0.1);
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 15px; */
+}
+#game_logo{
+    font-family: 'Permanent Marker', cursive;
+    width: 100%;
+    font-size: 80px;
+    margin: 0 auto;
+}
 table {
     border-collapse: collapse;
   }
 table, tr, td {
     border: 1px solid black;
     height: 50px;
-    width: 15px;
+    width: 20px;
     margin: 2px;
     font-family: 'Orbitron', sans-serif; 
-    border-radius: 20px;
-}
-.header {
-    width: 30%;
-    margin: 0 auto;
-    margin-top: 15px;
-}
-#logo1{
-    font-family: 'Permanent Marker', cursive;
-    width: 100%;
-    font-size: 80px;
-    margin: 0 auto;
-}
-#logo{
-    font-family: 'Permanent Marker', cursive;
-    font-size: 80px;
-    margin-top: 50px;
-    border-color: #fff;
-}
-.button {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 50px;
-    margin-left: 450px;
-    width: 450px;
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    background-color: rgb(140, 199, 233);
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-    margin-top: 20px;
-}
-.button:hover {background-color: rgb(140, 199, 233);}
-
-.button:active {
-  background-color: gray;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-body {
-    background-image: url("https://hdqwalls.com/download/assassins-creed-odyssey-nature-background-key-art-4k-tl-1920x1080.jpg");
-    /* background-image: url("https://mymblemoments.files.wordpress.com/2015/05/paralax_space21.png"); */
-    margin: 0px;
-    background-size: 100%;
-}
-.container{
-    display: block;
-    width: 900px;
-    margin: 0 auto;
-    margin-top: 10px;
-
-}
-.container2{
-    margin: 0 auto;
-    margin-top: 50px;
-    text-align: center;
-    display:block ;
-    position: relative;
 }
 #big_grid_container{
     background-color: black;
@@ -86,25 +106,23 @@ body {
     font-family: 'Orbitron', sans-serif;
     
 }
-.color {
+/* .color {
     background-color: rgb(158, 196, 210)
+} */
+.number_container{
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    display:none ;
+    position: relative;
 }
 
 .button_design {
     height: 50px;
     width: 50px;
-    background-color: rgb(110, 148, 111);
+    background-color: rgb(211, 100, 118);
     opacity: 0.9;
     transition: 0.3s;
 }
 .button_design:hover {opacity: 2}
-a {
-    color: #0060B6;
-    text-decoration: none;
-}
 
-a:hover 
-{
-     text-decoration:none; 
-     cursor:pointer;  
-}

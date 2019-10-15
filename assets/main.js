@@ -13,12 +13,18 @@ let correctPlacesForEight = ["23", "36", "67", "75",]
 let correctPlacesForNine = ["31", "43", "57", "65", "71"]
 let place = ''
 
-$(".container2").click(function (e) {
+$("#play").click(function(){
+    $(".HomePage_container").hide();
+    $(".number_container").show();
+    $(".game_container").show();
+  });
+
+$(".number_container").click(function (e) {
     number_holder = e.target.id
     console.log(number_holder);
 });
 
-$(".container").click(function (e) {
+$(".game_container").click(function (e) {
     place_holder = e.target.id
     console.log(place_holder);
     if (number_holder == '') {
@@ -30,6 +36,8 @@ $(".container").click(function (e) {
         });
     }
     else if (returnCheck()) {
+        console.log(e.target);
+        $(e.target).css("background-color", "rgb(230, 185, 67)");
         Swal.fire({
             type: 'success',
             title: "Correct Place",

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sudoku Game</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/main.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
@@ -14,10 +15,21 @@
 </head>
 
 <body>
-    <header class="header">
-        <h1 id="logo1">SUDOKU</h1>
-    </header>
-    <div class="container">
+        <hr>
+    <div class="HomePage_container">
+        <h1 id="HomePage_logo">SUDOKU</h1>
+        <div>
+            <a class="HomePage_button" id="play" role="button">Play</a>
+            <a class="HomePage_button" id="help" role="button">Resume</a>
+            <a class="HomePage_button" id="about" role="button">Tips</a>
+        </div>
+
+    </div>
+    
+    <div class="game_container">
+        <header class="header">
+            <h1 id="game_logo">SUDOKU</h1>
+        </header>
         <table id="big_grid_container">
             <tr>
                 <td>
@@ -197,24 +209,23 @@
                 </td>
             </tr>
         </table>
+    </div>Î
+    <div class="number_container">
+        <button id="1" class="button_design">1</button>
+        <button id="2" class="button_design">2</button>
+        <button id="3" class="button_design">3</button>
+        <button id="4" class="button_design">4</button>
+        <button id="5" class="button_design">5</button>
+        <button id="6" class="button_design">6</button>
+        <button id="7" class="button_design">7</button>
+        <button id="8" class="button_design">8</button>
+        <button id="9" class="button_design">9</button>
     </div>
-    <div class="container2">
-            <button id="1" class="button_design">1</button>
-            <button id="2" class="button_design">2</button>
-            <button id="3" class="button_design">3</button>
-            <button id="4" class="button_design">4</button>
-            <button id="5" class="button_design">5</button>
-            <button id="6" class="button_design">6</button>
-            <button id="7" class="button_design">7</button>
-            <button id="8" class="button_design">8</button>
-            <button id="9" class="button_design">9</button>
-    </div>
-    
+
 </body>
-<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
 <script src="/assets/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
 </html>
