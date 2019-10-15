@@ -28,7 +28,17 @@
             <a class="HomePage_button" id="help" role="button">Resume</a>
             <a class="HomePage_button" id="about" role="button">Tips</a>
         </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal_body"></div>
+                <a class="a" id="easy" href="">Easy</a>
+                <a class="a" id="medium" href="#">Medium</a>
+                <a class="a" id="hard" href="#">Hard</a>
+            </div>
+        </div>
     </div>
+
     <div class="page_container">
         <div class="column1">
             <header class="header">
@@ -54,11 +64,13 @@
                 </table>
 
             </div>
+            <h3 class="animated flash" id="timer"></h4>
+
             <div class="img_button">
                 <button id="home"><img id="img_home" src="/assets/img/icons8-home-page-64.png" alt="home"></button>
                 <button id="save"><img id="save_home" src="/assets/img/icons8-save-64.png" alt="save"></button>
             </div>
-            <div class="timer" id="time1r" ></div>
+
         </div>
         <div class="game_container">
             <table id="big_grid_container">
