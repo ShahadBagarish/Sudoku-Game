@@ -8,7 +8,7 @@
     <title>Sudoku Game</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="./assets/main.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -25,8 +25,8 @@
         <h1 id="HomePage_logo">SUDOKU</h1>
         <div>
             <a class="HomePage_button" id="play" role="button">Play</a>
-            <a class="HomePage_button" id="help" role="button">Resume</a>
-            <a class="HomePage_button" id="about" role="button">Tips</a>
+            <a class="HomePage_button" id="resume" role="button">Resume</a>
+            <a class="HomePage_button" id="about" role="button">About</a>
         </div>
         <div id="myModal" class="modal">
             <div class="modal-content">
@@ -64,12 +64,10 @@
                 </table>
 
             </div>
-            <h3 class="animated flash" id="timer"></h4>
-
-            <div class="img_button">
+            <h3 class="animated flash" id="timer">
+                </h4>
                 <button id="home"><img id="img_home" src="/assets/img/icons8-home-page-64.png" alt="home"></button>
-                <button id="save"><img id="save_home" src="/assets/img/icons8-save-64.png" alt="save"></button>
-            </div>
+
 
         </div>
         <div class="game_container">
@@ -197,7 +195,7 @@
                         <table class="box7_container">
                             <tr>
                                 <td id="60"></td>
-                                <td id="61" ></td>
+                                <td id="61"></td>
                                 <td id="62"></td>
                             </tr>
                             <tr>
@@ -252,12 +250,11 @@
                     </td>
                 </tr>
             </table>
-        </div>
-    </div>
+        
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
-<script src="/assets/main.js"></script>
+<script src="./assets/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
 </html>

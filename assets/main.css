@@ -46,10 +46,10 @@
 }
 #play:hover {background-color: wheat;}
 
-#help, .HomePage_button{
+#resume, .HomePage_button{
     background-color: rgb(40, 150, 220);
 }
-#help:hover {background-color: wheat;}
+#resume:hover {background-color: wheat;}
 
 #about, .HomePage_button{
     background-color: rgb(230, 185, 67);
@@ -148,22 +148,26 @@ table, tr, td {
     display: grid;
     grid-template-columns: 100px 100px;
 }
-#home , #save{
-    
-    border-radius: 20px;
+#home {
+    margin-left: 42%;
     margin-top: 10px;
+
+    border-radius: 20px;
     
     width: 60px;
 }
 #img_home{
    width: 100%
 }
-#save_home{
-   width: 100%
-}
+
 #timer {
     font-family: 'Orbitron', sans-serif;
     margin-left: 40%;
+    margin-top: 10px;
+}
+#score {
+    font-family: 'Orbitron', sans-serif;
+    margin-left: 30%;
     margin-top: 10px;
 }
 

@@ -3,7 +3,6 @@ let number_holder = ''
 let place_holder = ''
 let bool = true
 let id_out, id_in = ''
-let x, y = 0
 
 let board_hard = [
 
@@ -55,7 +54,7 @@ let solved_board_medium = [
 ]
 let board_easy = [
 
-    [0, 7, 3, 5, 9, 0, 1, 6],
+    [0, 2, 7, 3, 5, 9, 0, 1, 6],
     [0, 0, 4, 1, 2, 0, 0, 0, 0],
     [1, 0, 3, 7, 4, 8, 0, 0, 5],
     [0, 1, 5, 8, 0, 0, 6, 7, 2],
@@ -65,6 +64,18 @@ let board_easy = [
     [6, 3, 0, 2, 7, 5, 8, 4, 9],
     [7, 0, 2, 0, 9, 3, 0, 6, 0]
 ]
+// let board_easy = [
+
+//     [8, 2, 7, 3, 5, 9, 4, 0, 6],
+//     [5, 9, 4, 1, 2, 6, 7, 8, 3],
+//     [1, 6, 3, 7, 4, 8, 9, 2, 5],
+//     [9, 0, 5, 8, 3, 4, 6, 7, 2],
+//     [2, 4, 6, 5, 1, 7, 3, 9, 8],
+//     [3, 7, 8, 9, 6, 2, 1, 5, 4],
+//     [4, 5, 9, 6, 8, 1, 2, 3, 7],
+//     [6, 3, 1, 2, 7, 5, 8, 4, 9],
+//     [7, 8, 2, 4, 9, 3, 5, 6, 1]
+// ]
 let solved_board_easy = [
     [8, 2, 7, 3, 5, 9, 4, 1, 6],
     [5, 9, 4, 1, 2, 6, 7, 8, 3],
@@ -77,23 +88,20 @@ let solved_board_easy = [
     [7, 8, 2, 4, 9, 3, 5, 6, 1]
 ]
 
-
 // Click button --------------------
 
 $(".column1").hide();
 
 $("#home").click(function () {
 
+
+    location.reload()
+    fill_level(fill_zeros())
     $(".HomePage_container").show();
     $(".number_container").hide();
     $(".game_container").hide();
     $("#game_logo").hide();
     $(".column1").hide();
-
-    fill_level(fill_zeros())
-});
-
-$("#save").click(function () {
 
 });
 
@@ -104,6 +112,7 @@ $(".close").click(function () {
 $("#play").click(function () {
     $(".modal").show();
 });
+
 
 $("#hard").click(function () {
     $(".modal").hide();
@@ -116,7 +125,7 @@ $("#hard").click(function () {
 
     timer.setupListeners();
     fill_level(board_hard)
-    play(solved_board_hard)
+    play(solved_board_hard, board_hard)
 });
 $("#medium").click(function () {
     $(".modal").hide();
@@ -129,7 +138,7 @@ $("#medium").click(function () {
 
     timer.setupListeners();
     fill_level(board_medium)
-    play(solved_board_medium)
+    play(solved_board_medium, board_medium)
 });
 
 $("#easy").click(function () {
@@ -143,7 +152,7 @@ $("#easy").click(function () {
 
     timer.setupListeners();
     fill_level(board_easy)
-    play(solved_board_easy)
+    play(solved_board_easy, board_easy)
 });
 
 $(".number_container").click(function (e) {
@@ -153,10 +162,10 @@ $(".number_container").click(function (e) {
 
 // function ----------------------
 
-function play(solved_board) {
+function play(solved_board, board) {
+
     $(".game_container").click(function (e) {
         place_holder = e.target.id
-        console.log(place_holder.id);
         if (number_holder == '') {
             Swal.fire({
                 type: 'info',
@@ -164,6 +173,7 @@ function play(solved_board) {
                 showConfirmButton: false,
                 timer: 1500
             });
+
         }
         else if (e.target.innerHTML) {
             Swal.fire({
@@ -172,6 +182,7 @@ function play(solved_board) {
                 showConfirmButton: false,
                 timer: 1500
             });
+
         } else if (returnCheck(solved_board)) {
             $(e.target).css("background-color", "rgb(230, 185, 67)");
             Swal.fire({
@@ -181,9 +192,39 @@ function play(solved_board) {
                 timer: 1500
             });
             $(`#${place_holder}`).text(number_holder);
+            let idd = place_holder.split("")
+            board[idd[0]][idd[1]] = parseInt(number_holder)
             bool = false
             number_holder = ''
+            console.log(board);
+            
+            if (isWining(board)) {
+                Swal.fire({
+                    title: 'Congratulations !!' ,
+                    width: 600,
+                    padding: '3em',
+                    background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+                    backdrop: `
+                              rgba(0,0,123,0.4)
+                              url("https://sweetalert2.github.io/images/nyan-cat.gif")
+                              center left
+                              no-repeat
+                            `,
+                    showConfirmButton: false,
+                    timer: 2500
+                }).then(
+                    function () {
+                        location.reload()
+                        $(".HomePage_container").show();
 
+                        $(".number_container").hide();
+                        $(".game_container").hide();
+                        $("#game_logo").hide();
+                        $(".column1").hide();
+                        
+                    }
+                )
+            }
         } else {
             Swal.fire({
                 type: 'error',
@@ -194,6 +235,7 @@ function play(solved_board) {
 
         }
     });
+
 }
 
 function fill_level(board) {
@@ -218,7 +260,7 @@ function fill_zeros() {
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0]
-    
+
     ]
     for (var i = 0; i < zaros.length; i++) {
         id_out = i + ''
@@ -240,7 +282,7 @@ function returnCheck(solved_board) {
 }
 var timer = {
     Minutes: 0,
-    seconds: 0,
+    seconds: -1,
     timerId: 0,
     hasStarted: false,
 
@@ -272,4 +314,17 @@ var timer = {
             this.hasStarted = true;
         }
     }
+}
+
+function isWining(board) {
+    for (var i = 0; i < board.length; i++) {
+        for (let j = 0; j < board[i].length; j++) {
+            console.log(board[i][j] !== 0);
+            if (board[i][j] == 0) {
+                return false
+            }
+        }
+    }
+    return true
+
 }
