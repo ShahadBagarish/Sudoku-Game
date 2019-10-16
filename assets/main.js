@@ -169,7 +169,7 @@ function play(solved_board, board) {
         if (number_holder == '') {
             Swal.fire({
                 type: 'info',
-                title: "Choose number from bar",
+                title: "Choose Number From the Red Box",
                 showConfirmButton: false,
                 timer: 1500
             });
