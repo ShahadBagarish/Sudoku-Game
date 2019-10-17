@@ -31,7 +31,7 @@ animate.css
 
 Step1:
 Design the pages 
-![WireFrame](./img/WireFrame.png)
+![WireFrame](assets/img/WireFrame.png)
 Format: ![Alt Text](url)
 
 Step2:
