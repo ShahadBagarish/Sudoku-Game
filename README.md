@@ -44,6 +44,20 @@ Coding !!
 Step4: 
 Debug and test the pages
 
+### User Stories
+
+As prerequisite of software engineering immersive course -Misk for developing a complete project using the technologies taught in previous weeks:
+Day1:
+- Sketch and desing the pages style
+-Write the pseducode and the logic to solve the problem
+-Design the HTML page
+-Write the JavaScript code and runing the functionality of the game
+Day2:
+-Create the CSS style sheet for the web page
+Day3:
+-Add levels to game, timer, alert and animations
+-Debug and run the page for checking 
+-Complate the CSS design
 
 ## Planning and Development Process
 
@@ -55,11 +69,10 @@ The approach used to solve the problems faced during write the code was at each 
 
 ### Unsolved problems
 
-```
 - saving the user progress and the ability of resuming the game.
 - generate new grid randomly
 - add the ability of making notes in cells
-```
+
 
 ## Acknowledgments
 
