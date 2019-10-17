@@ -62,7 +62,14 @@ As prerequisite of software engineering immersive course -Misk for developing a 
 
 ## Planning and Development Process
 
-A basic story of your planning and developing this project.
+**Requirements phase:**
+In this phase I attempted to find a game that is will add to my skills. So after searching I found the sudoku will be an interesting game 
+**Planning phase:**
+After picking the idea, Planning phase started by firstly design the page and structure elements in HTML.Then writing the correct logic to get the correct output 
+**Development phase:**
+Then the functionality should begin to be written by making the JavaScript,CSS and HTML.
+**Testing and deploying phase:**
+At the end, it’s important to test the output and check whether all the functionalities work in good sequence
 
 ### Problem-Solving Strategy
 
