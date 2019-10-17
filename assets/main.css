@@ -8,10 +8,14 @@
 .HomePage_container{
     width: 900px;
     width: 30%;
-    /* margin-left: 20%; */
     margin: 0 auto;
 }
 #HomePage_logo{
+    position: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
     margin-top: 70px;
     font-family: 'Permanent Marker', cursive;
     font-size: 80px;
@@ -19,10 +23,13 @@
     text-shadow: -2px 0 rgb(3, 26, 46), 0 2px rgb(3, 26, 46), 2px 0 rgb(3, 26, 46), 0 -2px rgb(3, 26, 46);
 }
 .HomePage_button {
-    margin: 0 auto;
+    position: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     font-family: 'Orbitron', sans-serif;
     font-size: 30px;
-    width: 450px;
+
     display: inline-block;
     padding: 15px 25px;
     cursor: pointer;
@@ -67,10 +74,13 @@ Design the game Page*/
   display: flex ;
   flex-direction: column;
 }
-body {
-    background-color: rgb(240, 245, 245);
+body, html {
+    background-image: linear-gradient(rgb(252, 252, 252),rgb(200, 238, 238));
+    background-size: cover;
+    height: 100%;
 }
 .game_container{
+    
     display: none;
     width: 900px;
     margin: 0 auto;
@@ -79,6 +89,7 @@ body {
 
 }
 .header {
+          
     margin: 0 auto;
     margin-top: 15px;
     font-family: 'Permanent Marker', cursive;
@@ -169,7 +180,9 @@ table, tr, td {
     margin-top: 10px;
 }
 
+
 .modal {
+    
     display: none; 
     position: fixed; 
     z-index: 1; 
@@ -183,7 +196,8 @@ table, tr, td {
   }
   
   .modal-content {
-    background-color: #fefefe;
+    background-color: rgb(215, 240, 240);
+
     margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
@@ -230,6 +244,17 @@ table, tr, td {
   box-shadow: none;
   top: 5px;}
 
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #666;
+    color: white;
+    text-align: center;
+    opacity: 0.4;
+  }
+
   @media only screen and (max-width: 1439px) {
     .page_container{
         display: inline-block;
@@ -246,7 +271,9 @@ table, tr, td {
         width: 60px;
     }
     #img_home{
-       width: 100%
+       width: 100%;
+       background-color: rgb(233, 233, 233)
     }
     
   }
+  

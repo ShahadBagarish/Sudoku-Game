@@ -197,10 +197,10 @@ function play(solved_board, board) {
             bool = false
             number_holder = ''
             console.log(board);
-            
+
             if (isWining(board)) {
                 Swal.fire({
-                    title: 'Congratulations !!' ,
+                    title: 'Congratulations !!',
                     width: 600,
                     padding: '3em',
                     background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
@@ -221,7 +221,7 @@ function play(solved_board, board) {
                         $(".game_container").hide();
                         $("#game_logo").hide();
                         $(".column1").hide();
-                        
+
                     }
                 )
             }
@@ -245,6 +245,7 @@ function fill_level(board) {
             id_in = id_out + j + ''
             if (board[i][j] != 0) {
                 $(`#${id_in}`).text(board[i][j]);
+                $(`#${id_in}`).css("background-color", "rgb(233, 233, 233)");
             }
         }
     }
@@ -293,10 +294,10 @@ var timer = {
 
     updateTime: function updateTime() {
         this.seconds++;
-        if (this.seconds < 10) {
-            this.els.timer.text(this.Minutes + ":0" + this.seconds);
-        } if (this.Minutes < 10 && this.seconds < 10) {
+        if (this.Minutes < 10 && this.seconds < 10) {
             this.els.timer.text("0" + this.Minutes + ":0" + this.seconds);
+        } else if (this.seconds < 10) {
+            this.els.timer.text(this.Minutes + ":0" + this.seconds);
         } else if (this.Minutes < 10) {
             this.els.timer.text("0" + this.Minutes + ":" + this.seconds);
         } else {
@@ -304,7 +305,7 @@ var timer = {
         }
         if (this.seconds == 59) {
             this.Minutes++
-            this.seconds = 0
+            this.seconds = -1
         }
     },
     setupListeners: function () {
