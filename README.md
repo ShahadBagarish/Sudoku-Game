@@ -14,6 +14,8 @@ scan for empty cells to find the number can only appear once in any row, column 
 - Counting.
 by count all the different numbers that's in a row,column and region that connects to one cell.
 
+![WireFrame](assets/img/tip.png)
+
 ### Technical Used
 
 ```
@@ -32,7 +34,6 @@ animate.css
 Step1:
 Design the pages 
 ![WireFrame](assets/img/WireFrame.png)
-Format: ![Alt Text](url)
 
 Step2:
 writing the pseudo code in a way that will translated into a programming language
