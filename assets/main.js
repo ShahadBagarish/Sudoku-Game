@@ -1,3 +1,6 @@
+
+
+
 // Declaration Space ------------------
 let number_holder = ''
 let place_holder = ''
@@ -64,6 +67,17 @@ let board_easy = [
     [6, 3, 0, 2, 7, 5, 8, 4, 9],
     [7, 0, 2, 0, 9, 3, 0, 6, 0]
 ]
+let solved_board_easy = [
+    [8, 2, 7, 3, 5, 9, 4, 1, 6],
+    [5, 9, 4, 1, 2, 6, 7, 8, 3],
+    [1, 6, 3, 7, 4, 8, 9, 2, 5],
+    [9, 1, 5, 8, 3, 4, 6, 7, 2],
+    [2, 4, 6, 5, 1, 7, 3, 9, 8],
+    [3, 7, 8, 9, 6, 2, 1, 5, 4],
+    [4, 5, 9, 6, 8, 1, 2, 3, 7],
+    [6, 3, 1, 2, 7, 5, 8, 4, 9],
+    [7, 8, 2, 4, 9, 3, 5, 6, 1]
+]
 // let board_easy = [
 
 //     [8, 2, 7, 3, 5, 9, 4, 0, 6],
@@ -76,27 +90,15 @@ let board_easy = [
 //     [6, 3, 1, 2, 7, 5, 8, 4, 9],
 //     [7, 8, 2, 4, 9, 3, 5, 6, 1]
 // ]
-let solved_board_easy = [
-    [8, 2, 7, 3, 5, 9, 4, 1, 6],
-    [5, 9, 4, 1, 2, 6, 7, 8, 3],
-    [1, 6, 3, 7, 4, 8, 9, 2, 5],
-    [9, 1, 5, 8, 3, 4, 6, 7, 2],
-    [2, 4, 6, 5, 1, 7, 3, 9, 8],
-    [3, 7, 8, 9, 6, 2, 1, 5, 4],
-    [4, 5, 9, 6, 8, 1, 2, 3, 7],
-    [6, 3, 1, 2, 7, 5, 8, 4, 9],
-    [7, 8, 2, 4, 9, 3, 5, 6, 1]
-]
+
 
 // Click button --------------------
 
 $(".column1").hide();
 
 $("#home").click(function () {
-
-
+    
     location.reload()
-    fill_level(fill_zeros())
     $(".HomePage_container").show();
     $(".number_container").hide();
     $(".game_container").hide();
@@ -250,27 +252,7 @@ function fill_level(board) {
         }
     }
 }
-function fill_zeros() {
-    let zaros = [
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-    ]
-    for (var i = 0; i < zaros.length; i++) {
-        id_out = i + ''
-        for (let j = 0; j < zaros[i].length; j++) {
-            id_in = id_out + j + ''
-            $(`#${id_in}`).text("");
-        }
-    }
-}
 function returnCheck(solved_board) {
     let txt = place_holder + ''
     let index = txt.split('')
