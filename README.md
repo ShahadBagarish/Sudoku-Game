@@ -2,6 +2,8 @@
 
 Sudoku is a puzzle game designed for a single player. Grid of cells filled with numbers (1-2-3-4-5-6-7-8-9), stacked nine high and nine wide.
 
+To visit (file:///Users/shahad/Desktop/SEI/projects/Sudoku-Game/index.html#)
+
 ## Description
 
 The project game is to fill a 9x9 grid so that each column, each row, and each of the nine 3x3 regions contains the digits from 1 to 9. The player need to find missing number by scan rows, columns and regions to figure out where is only one legal place for that number. It's help for improves memory and logic when it used for memorize the numbers.
