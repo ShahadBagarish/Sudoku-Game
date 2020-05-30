@@ -2,7 +2,7 @@
 
 Sudoku is a puzzle game designed for a single player. Grid of cells filled with numbers (1-2-3-4-5-6-7-8-9), stacked nine high and nine wide.
 
-To visit (file:///Users/shahad/Desktop/SEI/projects/Sudoku-Game/index.html#)
+To visit (https://shahadbagarish.github.io/Sudoku-Game/)
 
 ## Description
 
